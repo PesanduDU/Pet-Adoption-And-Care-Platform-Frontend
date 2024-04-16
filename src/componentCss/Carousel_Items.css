@@ -1,0 +1,172 @@
+.carousel-list-item{
+    position: absolute;
+    inset: 0 0 0 0 ;
+}
+
+.carousel-list-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-content{
+   position: absolute;
+   top: 20%;
+   width: 1140px;
+   max-width: 80%;
+   left: 50%;
+   transform: translateX(-50%);
+   padding-right: 40%;
+   box-sizing: border-box;
+   color: #fff;
+   text-shadow: 0 5px 10px #0004;
+}
+
+.carousel-author{
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.carousel-title, .carousel-topic{
+    font-weight: bold;
+    font-size: 4em;
+    list-style: 1.3em;
+}
+
+.carousel-topic{
+    color: #f1683a;
+}
+
+.carousel-button{
+    display: grid;
+    grid-template-columns: repeat(2,130PX);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.carousel-content button{
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.carousel-content button:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    border: 1px solid #eee;
+}
+
+.carousel-list-item:nth-child(1){
+    z-index: 1;
+}
+
+.carousel-list .carousel-list-item:nth-child(1) .carousel-author,
+.carousel-list .carousel-list-item:nth-child(1) .carousel-title,
+.carousel-list-item:nth-child(1) .carousel-topic,
+.carousel-list-item:nth-child(1) .carousel-des,
+.carousel-list-item:nth-child(1) .carousel-button{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear forwards;
+}
+
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.carousel-list-item:nth-child(1) .carousel-title{
+    animation-delay: 1.3s;
+}
+
+.carousel-list-item:nth-child(1) .carousel-topic{
+    animation-delay: 1.4s;
+}
+
+.carousel-list-item:nth-child(1) .carousel-des{
+    animation-delay: 1.6s;
+}
+
+.carousel-list-item:nth-child(1) .carousel-button{
+    animation-delay: 1.8s;
+}
+
+.carousel.next .carousel-list .carousel-list-item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: showImage 0.5s linear 1 forwards;
+}
+
+@keyframes showImage{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0px;
+    }
+}
+
+.carousel.prev .carousel-list .carousel-list-item:nth-child(2){
+    z-index: 2;
+}
+
+.carousel.prev .carousel-list .carousel-list-item:nth-child(2) img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: outImage 0.5s linear 1 forwards;
+}
+
+@keyframes outImage{
+    to{
+        width: 150px;
+        height: 220px;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 50px;
+    }
+}
+
+.carousel.prev .carousel-list .carousel-list-item:nth-child(2) .carousel-author,
+.carousel.prev .carousel-list .carousel-list-item:nth-child(2) .carousel-title,
+.carousel.prev .carousel-list .carousel-list-item:nth-child(2) .carousel-topic,
+.carousel.prev .carousel-list .carousel-list-item:nth-child(2) .carousel-des,
+.carousel.prev .carousel-list .carousel-list-item:nth-child(2) .carousel-button{
+    animation: contentOut 1.5s linear 1 forwards;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+.carousel.next .arrows button,
+.carousel.prev .arrows button{
+    pointer-events: none;
+}
+
+@media screen and (max-width: 678px){
+    .carousel .carousel-list .carousel-list-item .carousel-content{
+        padding-right: 0;
+    }
+
+    .carousel-title{
+        font-size: 30px;
+    }
+}
