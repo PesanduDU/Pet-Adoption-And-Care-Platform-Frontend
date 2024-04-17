@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    /* margin-top: -50px; */
+    margin-top: -61px;
     margin-top: o;
     position: relative;
 }
@@ -37,7 +37,8 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    right: 10px
+    right: 10px;
+    color: #eee;
 }
 
 .thumbnail .item .content .title{
