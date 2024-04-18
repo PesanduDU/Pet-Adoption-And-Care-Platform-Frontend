@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Carousel from './components/Carousel';
+import PetCard from './components/PetCard.tsx';
 
 
 
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Header/>
       <Carousel/>
+      <PetCard/>
     </div>
   );
 }
