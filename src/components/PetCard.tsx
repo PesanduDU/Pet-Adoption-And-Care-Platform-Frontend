@@ -1,21 +1,33 @@
 import React from 'react'
 import PetsDetails from '../data/PetsDetails.js'
+import './../componentCss/PetCard.css'
+import cat from './../assets/images/pets/meow.jpg'
+
+import { useEffect, useState } from 'react';
+import{
+    APIProvider,
+    Map,
+    useMapsLibrary,
+    useMap,
+} from '@vis.gl/react-google-maps'
 
 export default function PetCard() {
 
  const petsArray = PetsDetails()
 
   return (
-    <div>
-        {petsArray.map(pet => (
-            <div key={pet.id}>
-            <h2>{pet.name}</h2>
-                <p>Type: {pet.type}</p>
-                <p>Age: {pet.age}</p>
-                {/* Render other pet details here */}
-                <img src={pet.photo} alt={pet.name} />
-          </div>
-        ))}
+    <div className='petcard'>
+        <div className="box">
+            <span><img src={cat} alt="" /></span>
+        </div>
+
+        <div className="pet-details">
+
+        </div>
+
+        <div className="map">
+
+        </div>
     </div>
   )
 }

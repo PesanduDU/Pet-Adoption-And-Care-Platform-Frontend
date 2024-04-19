@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+// import React, { memo } from 'react'
 import dog from './../assets/images/pets/doggy.jpg'
 import cat from './../assets/images/pets/meow.jpg'
 

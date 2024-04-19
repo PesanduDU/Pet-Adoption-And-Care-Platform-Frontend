@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.firstfooter {
+    background-color: black;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    transition: background-color 0.5s;
+    color: aqua;
+}
+
+.icon-facebook{
+    width: 35px;
+    height: auto;
+}
+
+.socialIcons a:hover .icon-facebook{
+    transition: background-color 0.5s;
+    color: 	#1877F2;
+}
+
+.icon-instagram{
+    width: 35px;
+    height: auto;
+}
+
+.socialIcons a:hover .icon-instagram{
+    transition: background-color 0.5s;
+   color: #fbad50;
+}
+
+.icon-twitter{
+    width: 35px;
+    height: auto;
+}
+
+.socialIcons a:hover .icon-twitter{
+    transition: background-color 0.5s;
+    color: 	#1DA1F2;
+}
+
+.icon-youtube{
+    width: 35px;
+    height: auto;
+}
+
+.socialIcons a:hover .icon-youtube{
+    transition: background-color 0.5s;
+    color: 	#FF0000;
+}
+
+.footerBottom {
+    background-color: black;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}

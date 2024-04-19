@@ -3,6 +3,8 @@ import './App.css';
 import Header from './components/Header';
 import Carousel from './components/Carousel';
 import PetCard from './components/PetCard.tsx';
+import LastFooter from './components/LastFooter.js';
+import FirstFooter from './components/FirstFooter.js';
 
 
 
@@ -12,6 +14,8 @@ function App() {
       <Header/>
       <Carousel/>
       <PetCard/>
+      <LastFooter/>
+      <FirstFooter/>
     </div>
   );
 }
