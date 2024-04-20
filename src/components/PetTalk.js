@@ -49,7 +49,7 @@ export default function PetTalk() {
             <p>
             “When animals express their feelings they pour out like water from a spout. Animals’ emotions are raw, unfiltered, and uncontrolled. Their joy is the purest and most contagious of joys and their grief the deepest and most devastating. Their passions bring us to our knees in delight and sorrow”.
             </p>
-            <h3> – James Cromwell</h3>
+            <h3> – Marc Bekoff</h3>
         </div>
     </div>
   )
