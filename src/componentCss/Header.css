@@ -8,11 +8,11 @@ header{
     z-index: 100;
     background-color: white;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     width: 100%;
     height: 61px;
-    padding: 0 100px;
+    padding: 0 0 0 100px ;
     border-bottom: 1px solid #dbdbdb;
     margin: 0;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ header ul li{
 
 header .logo{
     margin-right: 190px;
-    margin-left: 0;
+    margin-left: 80px;
     margin-top: 0;
     margin-bottom: 0; 
     padding: 0;
@@ -41,9 +41,9 @@ header .logo img{
     object-fit: cover;
 }
 
-header ul li:last-child{
+/* header ul li:last-child{
     margin-right: 0;
-}
+} */
 
 header ul li a{
     font-weight: bold;
@@ -79,7 +79,7 @@ header ul .submenu{
 header ul li:hover .submenu{
     z-index: 99;
     opacity: 1;
-    margin-top: 22px;
+    margin-top: 20px;
 }
 
 header ul .submenu li{
@@ -92,4 +92,14 @@ header ul .submenu li a{
     padding: 15px 20px;
     display: inline-block;
     width: 100%;
+}
+
+.user-circle{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 25px;
+    top: 15px;
 }
