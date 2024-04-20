@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pettalk{
+    width: 100vw;
+    height: 200vh;
+    background-color:antiquewhite;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.shape1{
+    position: absolute;
+    width: 630px;
+    right: 50px;
+    top: 120px;
+    transform: rotate(5deg);
+}
+
+.quote1{
+    position: absolute;
+    top:30px;
+    left: 60px;
+    font-size: 150px;
+}
+
+.pettalk span{
+    display: inline;
+}
+
+.pettalk span h1{
+    font-size: 120px;
+    font-family: Carter One;
+    position: absolute;
+    left: 220px;
+    top: 80px;
+    text-shadow: 2px 2px 3px #FF6700;
+    letter-spacing: 5px;
+}
+
+.pettalk span h2{
+    font-size: 80px;
+    font-family: Carter One;
+    position: absolute;
+    color: #FF7900;
+    letter-spacing: 10px;
+    text-shadow: 4px 4px 8px black;
+    top: 120px;
+    left: 470px;
+}
+
+.dog1{
+    position: absolute;
+    width: 500px;
+    top: 220px;
+    right: 120px;
+    margin: 0;
+    padding: 0;
+    filter: drop-shadow(-20px 15px 10px rgba(0,0,0,0.6));
+}
+
+.dog2{
+    position: absolute;
+    top: 600px;
+    left: 70px;
+    filter: drop-shadow(-20px 15px 10px rgba(0,0,0,0.6));
+}
+
+.para1{
+    position: absolute;
+    width: 820px;
+    height: 250px;
+    /* background-color: rgba(255,255,255,0.5); */
+    top: 320px;
+    left: 85px;
+    /* box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6); */
+    /* opacity: 0.5; */
+    border-bottom: 2px solid #52595D;
+}
+
+.para2{
+    position: absolute;
+    width: 900px;
+    height: 250px;
+    top: 770px;
+    right: 130px;
+    border-bottom: 2px solid #52595D;
+}
+
+.para1 p{
+    padding: 20px;
+    text-align: justify;
+    text-indent: 30px;
+    font-family: Cambria, Cochin;
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bold;
+    line-height: 40px;
+    color: #4D4D4F;
+}
+
+.para2 p{
+    padding: 20px;
+    text-align: justify;
+    text-indent: 30px;
+    font-family: Cambria, Cochin;
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bold;
+    line-height: 40px;
+    color: #4D4D4F;
+}
+
+.para1 h3{
+    position: absolute;
+    right: 20px;
+}
+
+.para2 h3{
+    position: absolute;
+    right: 20px;
+}
+
+.para1 p::first-letter{
+    font-size: 50px;
+}
+
+.para2 p::first-letter{
+    font-size: 50px;
+}
