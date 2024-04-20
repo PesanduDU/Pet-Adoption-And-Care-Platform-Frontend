@@ -7,8 +7,6 @@ import LastFooter from './components/LastFooter.js';
 import FirstFooter from './components/FirstFooter.js';
 import PetTalk from './components/PetTalk.js';
 
-
-
 function App() {
   return (
     <div className="App">
