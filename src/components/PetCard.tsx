@@ -13,22 +13,26 @@ import{
 } from '@vis.gl/react-google-maps'
 
 export default function PetCard() {
+  const petsArray = PetsDetails()
+  const apiKeyAsString = String(process.env.REACT_APP_API_KEY);
 
- const petsArray = PetsDetails()
+  console.log(process.env)
 
   return (
     <div className='petcard'>
-        <div className="box">
-            <span><img src={cat} alt="" /></span>
-        </div>
+      <div className="box">
+        <span><img src={cat} alt="" /></span>
+      </div>
 
-        <div className="pet-details">
+      <div className="pet-details">
 
-        </div>
+      </div>
 
-        <div className="map">
+      <div className="map">
+        <APIProvider apiKey={apiKeyAsString}>
 
-        </div>
+        </APIProvider>
+      </div>
     </div>
   )
 }
