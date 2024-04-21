@@ -5,12 +5,12 @@
 }
 
 .firstfooter {
-    background-color: black;
+    background-color: rgb(58, 55, 55);
 }
 
 .footerContainer {
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .socialIcons {
@@ -76,7 +76,7 @@
 
 .footerBottom {
     background-color: black;
-    padding-bottom: 30px;
+    padding: 20px 0;
     text-align: center;
 }
 

@@ -32,7 +32,7 @@ function LastFooter() {
                 <div className="col">
                     <h3>Newsletter<div className="underline"><span></span></div></h3>
                     <form>
-                        <input type="email" placeholder="Enter your email id" required />
+                        <input type="email" placeholder="Enter your email id" required  className='email'/>
                     </form>
                 </div>
             </div>
