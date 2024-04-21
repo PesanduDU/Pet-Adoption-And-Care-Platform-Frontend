@@ -3,7 +3,7 @@
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: #0c1022;
+    background: whitesmoke;
     position: relative;
     display: flex;
     /* justify-content: center; */
@@ -30,7 +30,7 @@
     position: absolute;
     width: 700px;
     height: 700px;
-    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    background-image: conic-gradient(transparent,transparent,transparent,#ff9633);
     animation: animate 4s linear infinite;
 }
 
@@ -39,7 +39,7 @@
     position: absolute;
     width: 700px;
     height: 700px;
-    background-image: conic-gradient(transparent,transparent,transparent,#d400d4);
+    background-image: conic-gradient(transparent,transparent,transparent,#ff9633);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
 }
@@ -55,7 +55,7 @@
 
 .box span{
     position: absolute;
-    inset: 3px;
+    inset: 7px;
     border-radius: 16px;
     background: #0c1022;
     z-index: 100;
@@ -71,26 +71,54 @@
 
 .map{
     position: absolute;
-    width: 200px;
+    width: 400px;
     height: 540px;
-    border: 1px solid white;
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 0 20px 20px 0;
     /* left: 1100px; */
     transition: width 2s;
     background-color: #d400d4;
     right: 85px;
+    overflow: hidden;
 }
 
 .map:hover{
-    width: 400px;
+    width: 540px;
 }
 
 .pet-details{
     position: absolute;
-    width: 560px;
+    width: 535px;
     height: 540px;
-    border: 1px solid white;
+    border: 3px solid rgb(0, 0, 0);
     left: 500px;
     border-radius: 20px 0 0 20px;
     
+}
+
+/* .map-container{
+    background-color: aliceblue;
+    height: 100%;
+    width: auto;
+    width: 100vw;
+    height: 100vh;
+} */
+
+.location-topic{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    right: 140px;
+    top: 90px;
+    width: 300px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-topic span{
+    color: antiquewhite;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
