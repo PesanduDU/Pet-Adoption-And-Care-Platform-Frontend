@@ -10,12 +10,12 @@ import PetTalk from './components/PetTalk.js';
 function App() {
   return (
     <div className="App">
-      {/* <Header/>
+      <Header/>
       <Carousel/>
-      <PetTalk/> */}
+      <PetTalk/>
       <PetCard/>
-      {/* <LastFooter/>
-      <FirstFooter/> */}
+      <LastFooter/>
+      <FirstFooter/>
     </div>
   );
 }
