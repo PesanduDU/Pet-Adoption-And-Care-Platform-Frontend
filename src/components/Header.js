@@ -2,6 +2,7 @@ import React from 'react'
 import './../componentCss/Header.css'
 import logo1 from './../assets/images/logo.jpg'
 import { FaUserCircle } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><Link to="/home">Home</Link></li>
           {/* <li><a href="#">About Us</a></li> */}
           <li><a href="#">About</a></li>
           <li><a href="#">Gallery</a>
@@ -28,7 +29,7 @@ export default function Header() {
             </ul>
           </li>
           <li><a href="#">Review</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link to="/contact">Contact</Link></li>
           <li><a href="#">Login</a>
             <ul className="submenu">
               <li><a href="#">User</a></li>
