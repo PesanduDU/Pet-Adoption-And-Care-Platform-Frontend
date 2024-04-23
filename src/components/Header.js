@@ -32,7 +32,7 @@ export default function Header() {
           <li><Link to="/contact">Contact</Link></li>
           <li><a href="#">Login</a>
             <ul className="submenu">
-              <li><a href="#">User</a></li>
+              <li><Link to="/signup">User</Link></li>
               <li><a href="#">Admin</a></li>
             </ul>
           </li>

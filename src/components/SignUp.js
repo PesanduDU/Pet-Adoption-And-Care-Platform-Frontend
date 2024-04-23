@@ -1,9 +1,11 @@
 import React from 'react'
+import './../componentCss/SignUp.css';
 
 
 function Signup() {
   return (
-      <div className="wrapper">
+      <div className="body1">
+        <div className="wrapper">
         <form action="">
           <h1>Sign Up</h1>
 
@@ -35,6 +37,7 @@ function Signup() {
 
         </form>
     </div>
+      </div>
   )
 }
 

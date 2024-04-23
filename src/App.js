@@ -8,6 +8,7 @@ import FirstFooter from './components/FirstFooter.js';
 import PetTalk from './components/PetTalk.js';
 import Home from './pages/Home.js';
 import Contact from './pages/Contact.js'
+import UserLogIn from './pages/UserLogIn.js'
 import NopPage from './pages/NopPage.js';
 import PetsComponent from './components/aaa.js';
 import PetsDetails from './data/PetsDetails.js';
@@ -28,6 +29,7 @@ function App() {
           <Route index element={<Home/>} />
           <Route path='/home' element={<Home/>} />
           <Route path='/contact' element={<Contact/>} />
+          <Route path='/signup' element={<UserLogIn/>}/>
           <Route path='*' element={<NopPage/>}/>
         </Routes>
       </BrowserRouter>
