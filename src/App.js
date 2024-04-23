@@ -9,10 +9,14 @@ import PetTalk from './components/PetTalk.js';
 import Home from './pages/Home.js';
 import Contact from './pages/Contact.js'
 import NopPage from './pages/NopPage.js';
+import PetsComponent from './components/aaa.js';
+import PetsDetails from './data/PetsDetails.js';
 
 function App() {
   return (
     <div className="App">
+      {/* <PetsComponent/> */}
+      {/* <PetsDetails/> */}
       {/* <Header/>
       <Carousel/>
       <PetTalk/>

@@ -3,7 +3,7 @@ import React from 'react';
 import PetsDetails from '../data/PetsDetails.js';
 import './../componentCss/PetCard.css';
 import cat from './../assets/images/pets/meow.jpg'
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 import {useJsApiLoader, GoogleMap, Marker} from '@react-google-maps/api'
 

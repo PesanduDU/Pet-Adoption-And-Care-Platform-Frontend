@@ -1,5 +1,6 @@
 import React from 'react'
 import './../componentCss/Carousel_Items.css'
+import { Link } from 'react-router-dom'
 
 export default function Carousel_Items({img}) {
     return (

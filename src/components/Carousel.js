@@ -122,8 +122,8 @@ export default function Carousel() {
         const nextDom = document.getElementById('next');
         const prevDom = document.getElementById('prev');
         const carouselDom = document.querySelector('.carousel');
-        const listItemDom = document.querySelector('.carousel-list');
-        const thumbnailDom = document.querySelector('.thumbnail');
+        // const listItemDom = document.querySelector('.carousel-list');
+        // const thumbnailDom = document.querySelector('.thumbnail');
 
         nextDom.onclick = function(){
             showSlider('next');
@@ -141,13 +141,30 @@ export default function Carousel() {
         }, timeAutoNext)
 
         function showSlider(type){
+            const listItemDom = document.querySelector('.carousel-list');
+            const thumbnailDom = document.querySelector('.thumbnail');
             const itemSlider = document.querySelectorAll('.carousel-list-item');
             const itemThumbnail = document.querySelectorAll('.carousel .thumbnail .item');
+            const firstItem = itemSlider[0];
+            const firstThumnail = itemThumbnail[0];
 
             if(type === 'next'){
-                listItemDom.appendChild(itemSlider[0]);
-                thumbnailDom.appendChild(itemThumbnail[0]);
-                carouselDom.classList.add('next');
+                // listItemDom.appendChild(itemSlider[0]);
+                // thumbnailDom.appendChild(itemThumbnail[0]);
+                // carouselDom.classList.add('next');
+
+                // listItemDom.appendChild(firstItem);
+                // thumbnailDom.appendChild(firstThumnail);
+                // carouselDom.classList.add('next');
+
+                if(listItemDom.appendChild(firstItem) === null || thumbnailDom.appendChild(firstThumnail) === null){
+
+                }else{
+                    listItemDom.appendChild(firstItem);
+                    thumbnailDom.appendChild(firstThumnail);
+                    carouselDom.classList.add('next');
+                }
+                
             }
             else{
                 // const positionLastItem = itemSlider.length-1;
@@ -245,3 +262,66 @@ export default function Carousel() {
     </div>
   )
 }
+
+
+// import React, { useEffect, useState } from 'react';
+// import Carousel_Items from './Carousel_Items';
+// import './../componentCss/Carousel.css';
+// import './../componentCss/Carousel_Items.css';
+// import img1 from './../assets/images/img1.jpg';
+// import img2 from './../assets/images/img2.jpg';
+// import img3 from './../assets/images/img3.jpg';
+// import img4 from './../assets/images/img4.jpg';
+
+// export default function Carousel() {
+//     const [currentIndex, setCurrentIndex] = useState(0);
+//     const images = [img1, img2, img3, img4];
+
+//     useEffect(() => {
+//         const timeAutoNext = 7000;
+//         const intervalId = setInterval(() => {
+//             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+//         }, timeAutoNext);
+
+//         return () => clearInterval(intervalId);
+//     }, [images.length]);
+
+//     const handleNext = () => {
+//         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+//     };
+
+//     const handlePrev = () => {
+//         setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+//     };
+
+//     return (
+//         <div className='carousel'>
+//             <div className="carousel-list">
+//                 {images.map((img, index) => (
+//                     <Carousel_Items key={index} img={img} />
+//                 ))}
+//             </div>
+
+//             <div className="thumbnail">
+//                 {images.map((img, index) => (
+//                     <div key={index} className="item">
+//                         <img src={img} alt="" />
+//                         <div className="content">
+//                             <div className="title">
+//                                 Name Slider
+//                             </div>
+//                             <div className="des">
+//                                 Description
+//                             </div>
+//                         </div>
+//                     </div>
+//                 ))}
+//             </div>
+
+//             <div className="arrows">
+//                 <button id="prev" onClick={handlePrev}>{'<'}</button>
+//                 <button id="next" onClick={handleNext}>{'>'}</button>
+//             </div>
+//         </div>
+//     );
+// }
