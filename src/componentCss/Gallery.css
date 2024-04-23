@@ -89,23 +89,24 @@ button:hover {
 }
 
 .card_button {
-    margin-top: 10px; /* Adjust as needed */
+    margin-top: 2px; /* Adjust as needed */
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
     background-color: #FFAE42;
     color: #fff;
     border: none;
-    border-radius: 6px;
+    border-radius: 22px 0 0 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
     align-items: center;
     position: absolute;
     bottom: 0;
+    right: 0;
 }
 
 .card_button:hover {
-    background-color: #FF7F00;
+    background-color: #636161;
 }
 
 @media (max-width: 768px) {

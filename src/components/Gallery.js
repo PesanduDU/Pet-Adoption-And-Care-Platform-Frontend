@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './../componentCss/Gallery.css'; // Assuming this is the correct path to your CSS file
+import { Link } from 'react-router-dom';
 
 // Import images
 import DogImage1 from '../assets/images/gallery/dog.jpg';
@@ -61,7 +62,7 @@ function FilterableImageGallery() {
                         <div className="card_body">
                             <h6 className="class_title">{image.category}</h6>
                             <p className="card_text">{image.description}</p>
-                            <button className="card_button" >See more</button>
+                            <Link to="/moreDetails"><button className="card_button" >See more</button></Link>
                         </div>
                     </div>
                 ))}

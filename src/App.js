@@ -14,6 +14,8 @@ import PetsComponent from './components/aaa.js';
 import PetsDetails from './data/PetsDetails.js';
 import Gallery from './pages/GalleryPage.js';
 import ProductPage from './pages/ProductPage.js';
+import LogInPage from './pages/LogInPage.js';
+import PetMoreDetailsPage from './pages/PetMoreDetailsPage.js';
 
 function App() {
   return (
@@ -22,9 +24,9 @@ function App() {
       {/* <PetsDetails/> */}
       {/* <Header/>
       <Carousel/>
-      <PetTalk/>
-      <PetCard/>
-      <LastFooter/>
+      <PetTalk/> */}
+      {/* <PetCard/> */}
+      {/* <LastFooter/>
       <FirstFooter/> */}
       <BrowserRouter>
         <Routes>
@@ -35,6 +37,8 @@ function App() {
           <Route path='/gallery' element={<Gallery/>}/>
           <Route path='/products' element={<ProductPage/>}/>
           <Route path='*' element={<NopPage/>}/>
+          <Route path='/login' element={<LogInPage/>}/>
+          <Route path='/moreDetails' element={<PetMoreDetailsPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -6,4 +6,7 @@ body{
     /* color: #eee; */
     margin: 0;
     font-size: 12px;
+    background: url('C:/Users/ASUS/Desktop/Pet-Adoption-And-Care-Platform-Frontend/src/componentCss/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }

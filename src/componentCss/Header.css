@@ -47,9 +47,9 @@ header .logo img{
 
 header ul li a{
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
-    color: #808080;
+    color: #666666;
     padding: 0;
     display: inline-block;
     transition: all ease 0.3s;
