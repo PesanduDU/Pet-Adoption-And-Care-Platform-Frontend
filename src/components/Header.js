@@ -16,7 +16,11 @@ export default function Header() {
           {/* <li><a href="#">About Us</a></li> */}
           <li><a href="#">About</a></li>
           <li><Link to="/gallery">Gallery</Link></li>
-          <li><a href="#">Store</a></li>
+          <li><a href="#">Store</a>
+            <ul className="submenu">
+              <li><Link to="/products">Products</Link></li>
+            </ul>
+          </li>
           <li><a href="#">Review</a></li>
           <li><Link to="/contact">Contact</Link></li>
           <li><a href="#">Login</a>

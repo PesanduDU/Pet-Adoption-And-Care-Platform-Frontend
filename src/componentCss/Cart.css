@@ -15,9 +15,9 @@ html{
    overflow-x: hidden;
 }
 
-body{
+/* body{
    background: #eee;
-}
+} */
 
 .container{
    max-width: 1200px;

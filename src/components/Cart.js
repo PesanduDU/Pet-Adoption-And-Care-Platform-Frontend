@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 //import './../Pages/cart/cart.css'; // Import your CSS file
-import './../cart/Cart.css'
-import img1 from './Images/1.png'
-import img2 from './Images/2.webp'
-import img3 from './Images/3.png'
-import img4 from './Images/4.png'
-import img5 from './Images/5.png'
-import img6 from './Images/6.png'
+import './../componentCss/Cart.css'
+import img1 from './../assets/images/products/1.png'
+import img2 from './../assets/images/products/2.webp'
+import img3 from './../assets/images/products/3.png'
+import img4 from './../assets/images/products/4.png'
+import img5 from './../assets/images/products/5.png'
+import img6 from './../assets/images/products/6.png'
 //import './../cart/Images'
 const Product = ({ dataName, imgSrc, title, price, onClick }) => (
   <div className="product" data-name={dataName} onClick={onClick}>
