@@ -252,8 +252,8 @@ export default function Carousel() {
 
         {/* arrows */}
         <div className="arrows">
-            <button id="prev">{'<'}</button>
-            <button id="next">{'>'}</button>
+            <button  id="prev">{'<'}</button>
+            <button  id="next">{'>'}</button>
             {/* <button id="next" onClick={() => showSlider('next')}>{'>'}</button> */}
         </div>
 

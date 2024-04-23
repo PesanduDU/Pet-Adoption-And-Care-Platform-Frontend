@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Bbb from './bbb';
 import PetsDetails from '../data/PetsDetails';
 
 function PetsComponent() {

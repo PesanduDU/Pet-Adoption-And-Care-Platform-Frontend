@@ -15,19 +15,8 @@ export default function Header() {
           <li><Link to="/home">Home</Link></li>
           {/* <li><a href="#">About Us</a></li> */}
           <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a>
-            <ul className="submenu">
-              <li><a href="#">Dogs</a></li>
-              <li><a href="#">Cats</a></li>
-              <li><a href="#">Other</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Store</a>
-            <ul className="submenu">
-              <li><a href="#">Pet Foods</a></li>
-              <li><a href="#">Pet </a></li>
-            </ul>
-          </li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><a href="#">Store</a></li>
           <li><a href="#">Review</a></li>
           <li><Link to="/contact">Contact</Link></li>
           <li><a href="#">Login</a>

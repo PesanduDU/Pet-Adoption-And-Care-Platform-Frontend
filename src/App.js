@@ -12,6 +12,7 @@ import UserLogIn from './pages/UserLogIn.js'
 import NopPage from './pages/NopPage.js';
 import PetsComponent from './components/aaa.js';
 import PetsDetails from './data/PetsDetails.js';
+import Gallery from './pages/GalleryPage.js';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/home' element={<Home/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/signup' element={<UserLogIn/>}/>
+          <Route path='/gallery' element={<Gallery/>}/>
           <Route path='*' element={<NopPage/>}/>
         </Routes>
       </BrowserRouter>
